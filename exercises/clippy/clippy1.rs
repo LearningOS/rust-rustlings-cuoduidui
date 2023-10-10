@@ -6,13 +6,13 @@
 // check clippy's suggestions from the output to solve the exercise.
 // Execute `rustlings hint clippy1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 use std::f32;
 
 fn main() {
-    let pi = 3.14f32;
-    let radius = 5.00f32;
+    // let pi = 3.14_f32;
+    let pi = std::f32::consts::PI;//std::f32::consts 检查分别在或 中定义的近似常量的浮点文字 std::f64::consts，建议使用预定义常量。
+    let radius = 5.00_f32;
 
     let area = pi * f32::powi(radius, 2);
 
